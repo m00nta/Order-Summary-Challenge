@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
@@ -26,15 +27,40 @@
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
-    Order Summary You can now listen to millions of songs, audiobooks, and
-    podcasts on any device anywhere you like! Annual Plan $59.99/year Change
-    Proceed to Payment Cancel Order
+    <section class="card-container">
+      <div class="card-img"></div>
+      <div class="card-info">
+        <h2 class="card-title">Order Summary</h2>
+        <p class="card-text">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <div class="card-pricing">
+          <div class="card-pricing-info">
+            <img
+              src="/images/icon-music.svg"
+              alt="An Icon represent music"
+              class="card-pricing-icon"
+            />
+            <div class="card-pricing-plan">
+              <span>Annual Plan</span>
+              <p>$59.99/year</p>
+            </div>
+          </div>
+          <a href="#" class="card-pricing-btn">Change</a>
+        </div>
+      </div>
+      <div class="card-main-btn">
+        <a href="#" class="card-btn cta">Proceed to Payment</a>
+        <a href="#" class="card-btn">Cancel Order</a>
+      </div>
+    </section>
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      >. Coded by <a href="https://twitter.com/m00nta">Montassar Mosbehi</a>.
+    </footer>
   </body>
 </html>
