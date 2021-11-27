@@ -6,9 +6,9 @@
 
 - Font Weight: 
   
-  Defaults: 300
-  Medium: 400
-  Semi-bold: 600
+  Defaults: 500
+  Medium: 700
+  Semi-bold: 900
 
 - Line Height: 
 
@@ -22,23 +22,20 @@
 
 ---02 COLORS
 
-  - Primary: hsl(215, 51%, 70%)
+  - Primary: 
   - Tints:  
   - Shades: 
-    hsl(215, 32%, 27%) 
-    hsl(216, 50%, 16%) 
-    hsl(217, 54%, 11%)
-  - Accents:hsl(178, 100%, 50%)
+  - Accents:
   - Greys:  
 
 
 ---05 SHADOWS
-  8px 8px 30px rgba(0, 0, 0, 0.1)
+   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
 
 ---06 BORDER-RADIUS
 
     Big: 1.6rem = 16px
-    Medium: 1.2rem = 12 px
+    Medium: 1rem = 10 px
 
 
 ---07 WHITESPACE
@@ -106,6 +103,7 @@ a:hover {
   background-image: url("/images/illustration-hero.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card-info {
@@ -214,3 +212,20 @@ a:hover {
 /* Media Queries at 375px */
 /* Rem and Em do NOT depend on html font-size in media  queries Instead, 1rem = 1em = 16px */
 /* So 375px = 23.44rem */
+
+@media (max-width: 23.44rem) {
+  .card-container {
+    max-width: 33rem;
+  }
+
+  .card-btn {
+    padding: 1.4rem 7.1rem;
+  }
+  .card-pricing {
+    gap: 4.8rem;
+  }
+
+  .card-text {
+    font-size: 1.6rem;
+  }
+}
